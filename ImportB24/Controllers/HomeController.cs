@@ -174,6 +174,7 @@ namespace ImportB24.Controllers
         public string datajson { get; set; }
     }
 
+    // класс вспомогательных функций
     public class Function
     {
         public string FilterNumber(string tel)
@@ -192,6 +193,7 @@ namespace ImportB24.Controllers
             return strtel;
         }
     }
+    // класс функций sql
     public class SQL
     {
         public SqlConnection conn;
