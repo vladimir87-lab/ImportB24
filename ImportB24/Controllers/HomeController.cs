@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 
-
+// импорт из битрикса 24 в базу телефонный номеров
 namespace ImportB24.Controllers
 {
     public class HomeController : Controller
