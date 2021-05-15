@@ -28,7 +28,7 @@
                 <input type="text" value="table" name="NameTbl" style="width: 300px;">
             </div>
         </div>
-        <input id="parse" type="submit" value="Парсинг" onclick="block()">
+        <input id="parse" type="submit" value="Парсинг" on="block()">
         <div id="text"></div>
     </form>
     }
@@ -58,10 +58,11 @@
     </div>
 <script type="text/javascript">
     function block(){
-        $("#parse").attr("disabled", "disabled");
+       
         setInterval(Upcount, 3000);
     }
     function Upcount() {
+        $("#parse").attr("disabled", "disabled");
         $.ajax({
             url: '/countparse',         /* Куда пойдет запрос */
             method: 'get',             /* Метод передачи (post или get) */

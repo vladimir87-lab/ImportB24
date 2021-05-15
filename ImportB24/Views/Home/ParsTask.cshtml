@@ -1,0 +1,27 @@
+﻿@using ImportB24.Controllers
+@model List<DataAbonent>
+
+@{
+    ViewBag.Title = "ParsTask";
+
+}
+
+<div style="text-align: center; padding: 20px; font-size: 22px; ">
+    <div>Импорт завершен! Всего:   @ViewBag.Count   записей.</div>
+    <div>
+        <p>Данные не попавшие в импорт, @Model.Count записей</p>
+        <table style="margin: 0px auto;text-align: center;">
+            <thead>
+                <tr><th>Id</th><th>Сущность</th><th>Телефон</th><th>Причина</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr><td>@item.IdEnt</td><td>@item.Type</td><td>@item.telef</td><td>@item.Title</td></tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div><a href="/">Назад</a></div></div>
+
